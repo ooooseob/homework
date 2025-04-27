@@ -114,10 +114,10 @@
 
 - 이미지를 삽일할 때는 \!\[ \] \( \) 형식을 사용한다.
 
-![모바일 배경화면](./src/assets/ooooseob_wallpaper3.jpg)
+![모바일 배경화면](./../assets/ooooseob_wallpaper3.jpg)
 
 ```
-![모바일 배경화면](./src/assets/ooooseob_wallpaper3.jpg)
+![모바일 배경화면](./../assets/ooooseob_wallpaper3.jpg)
 ```
 
 ### 6. 강조
