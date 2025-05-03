@@ -1,1 +1,50 @@
 /* 여기에 스타일을 구현해 주세요 */
+
+.user-status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-list {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 356px;
+  gap: 20px;
+  padding: 100px;
+  color: #ffffff;
+}
+
+.user {
+  position: relative;
+}
+
+.user img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.online {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #ffffff;
+  background-color: #4cfe88;
+}
+
+.offline {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #ffffff;
+  background-color: #dbdbdb;
+}
