@@ -1,1 +1,36 @@
 <!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버 login</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/login/styles/login.css" />
+  </head>
+  <body>
+    <h1>로그인</h1>
+    <div class="login-container">
+      <a class="logo" href="/"
+        ><svg width="165" height="32" viewBox="0 0 165 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.5765 17.1196L9.77815 0H0V31.9872H10.2436V14.8677L22.042 31.9872H31.8202V0H21.5765V17.1196Z" fill="#03CF5D" />
+          <path d="M47.4975 0L35.0785 31.9872H45.6356L47.1334 27.7649H59.0363L60.5372 32H71.0911L58.6721 0.0127976L47.4975 0ZM49.5463 20.0688L53.0864 10.076L56.6234 20.0688H49.5463Z" fill="#03CF5D" />
+          <path d="M83.6652 21.0316L76.2113 0H65.6573L78.0764 31.9872H89.2509L101.67 0H91.1129L83.6652 21.0316Z" fill="#03CF5D" />
+          <path d="M115.017 19.8353H129.453V12.1519H115.017V7.84006H129.608V0H104.928V31.9872H129.918V24.1471H115.017V19.8353Z" fill="#03CF5D" />
+          <path
+            d="M156.995 21.0124L157.945 20.6062C161.625 19.0516 163.496 15.6833 163.496 11.4098C163.496 7.36985 162.036 4.37265 159.161 2.52699C156.485 0.802882 153.018 0 148.243 0H134.887V31.9872H144.82V23.05H148.392L154.443 31.9872H165L156.995 21.0124ZM150.098 14.8964H144.665V8.15354H150.098C150.984 8.15354 151.833 8.50875 152.458 9.14102C153.084 9.77329 153.436 10.6308 153.436 11.525C153.436 12.4192 153.084 13.2767 152.458 13.909C151.833 14.5412 150.984 14.8964 150.098 14.8964Z"
+            fill="#03CF5D"
+          />
+        </svg>
+      </a>
+      <form action="/" method="GET" class="form-input">
+        <label for="user-id" class="sr-only">아이디</label>
+        <input type="text" id="user-id" required />
+      </form>
+    </div>
+  </body>
+</html>
