@@ -1,3 +1,203 @@
-@import "./card-component.css";
+@import './card-component.css';
 
 /* 카드 레이아웃 */
+
+.main {
+  display: grid;
+  gap: 1.25rem;
+
+  @media (width >= 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  & .card-item-ipadpro {
+    background: url(../products/ipad_pro.jpeg);
+    @media (width >= 1024px) {
+      background: url(../products/ipad_pro_wide.jpeg);
+      grid-column: span 2;
+    }
+  }
+  & .card-item-ipadair {
+    background: url(../products/ipad_air.jpeg);
+    @media (width >= 1024px) {
+      background: url(../products/ipad_air_wide.jpeg);
+      grid-column: span 2;
+    }
+  }
+  & .card-item-iphone15pro {
+    background: url(../products/iphone15_pro.jpeg);
+    @media (width >= 1024px) {
+      background: url(../products/iphone15_pro_wide.jpeg);
+      grid-column: span 2;
+    }
+  }
+  & .card-item-iphone15 {
+    background: url(../products/iphone15.jpeg);
+  }
+  & .card-item-watch {
+    background: url(../products/apple_watch.jpeg);
+  }
+  & .card-item-macbookair {
+    background: url(../products/macbook_air.jpeg);
+  }
+  & .card-item-airpodspro {
+    background: url(../products/airpods_pro.jpeg);
+  }
+
+  .card-inpo.dark-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--small-spacing);
+    padding-block-start: var(--large-spacing);
+    color: var(--white);
+    block-size: var(--size);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 10%;
+
+    @media (width >= 1024px) {
+      padding-block-start: var(--extra-large-spacing);
+    }
+
+    .card-headline {
+      font-size: var(--large-text);
+      @media (width >= 1024px) {
+        font-size: var(--extra-large-text);
+      }
+    }
+
+    .card-body {
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      padding: var(--x-small-spacing);
+
+      @media (width >= 1024px) {
+        font-size: var(--medium-text);
+      }
+    }
+
+    .card-subbody {
+      font-size: var(--small-text);
+      color: var(--gray);
+    }
+
+    .button {
+      display: flex;
+      column-gap: var(--small-spacing);
+
+      .card-bt {
+        font-size: var(--xx-small-text);
+        padding: var(--x-small-spacing) var(--small-spacing);
+        border-radius: 50px;
+
+        @media (width >= 1024px) {
+          font-size: var(--x-small-text);
+        }
+      }
+
+      .bt-more {
+        background: var(--blue-200);
+
+        &:hover {
+          background: var(--blue-400);
+        }
+      }
+
+      .bt-price {
+        color: var(--blue-200);
+        border: 1px solid var(--blue-200);
+
+        &:hover {
+          background: var(--blue-400);
+          color: var(--white);
+        }
+
+        @media (width >= 1024px) {
+          font-size: var(--x-small-text);
+        }
+      }
+    }
+  }
+
+  .card-inpo.light-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--small-spacing);
+    padding-block-start: var(--large-spacing);
+    height: var(--size);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (width >= 1024px) {
+      padding-block-start: var(--extra-large-spacing);
+    }
+
+    .card-headline {
+      font-size: var(--large-text);
+
+      @media (width >= 1024px) {
+        font-size: var(--extra-large-text);
+      }
+    }
+
+    .card-body {
+      font-size: var(--base-text);
+      line-height: var(--line-normal);
+      padding: var(--x-small-spacing);
+
+      @media (width >= 1024px) {
+        font-size: var(--medium-text);
+      }
+    }
+
+    .card-subbody {
+      font-size: var(--small-text);
+      color: var(--gray);
+    }
+
+    .button {
+      display: flex;
+      column-gap: var(--small-spacing);
+
+      .card-bt {
+        font-size: var(--xx-small-text);
+        padding: var(--x-small-spacing) var(--small-spacing);
+        border-radius: 50px;
+      }
+
+      @media (width >= 1024px) {
+        font-size: var(--x-small-text);
+      }
+
+      .bt-more {
+        color: var(--white);
+        background: var(--black);
+
+        &:hover {
+          background: var(--gray);
+        }
+
+        @media (width >= 1024px) {
+          font-size: var(--x-small-text);
+        }
+      }
+
+      .bt-price {
+        color: var(--black);
+        border: 1px solid var(--black);
+
+        &:hover {
+          background: var(--black);
+          color: var(--white);
+        }
+
+        @media (width >= 1024px) {
+          font-size: var(--x-small-text);
+        }
+      }
+    }
+  }
+}
